@@ -1,0 +1,22 @@
+<div ng-include="'views/menu.html'"></div>
+
+<div id="main">
+    <div id="map"></div>
+    <form>
+        <div class="form-group">
+            <div class="col-md-3">
+                <label> Descrição: </label>
+                <input type="text" class="form-control" ng-model="descricao" />
+            </div>
+            <div class="form-group col-md-3">
+                <label> Tipo: </label> <br>
+                <select class="form-control" ng-model="tipo">
+                    <option value="0">Estabelecimento</option>
+                    <option value="1">Via</option>
+                </select>
+            </div>
+            <br>
+            <button class="btn btn-success col-md-3" ng-click="registrarPonto();">Registrar</button>
+        </div>
+    </form>
+</div>
